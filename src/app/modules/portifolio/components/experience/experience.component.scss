@@ -17,11 +17,9 @@
         margin-top: 10px;
         background: var(--black-010);
         border-radius: 7px;
-        color: var(--white);
-
+       
         summary,article{
             padding: 10px 20px;
-            color: var(--grey);
             transition: 500ms ease-out;
         }
 
@@ -37,10 +35,36 @@
             p {
                 font-size: 14px;
                 color: var(--black-010);
+
                 padding: 0px;
+                margin: 0px;
+
                 display: flex;
                 flex-direction: column;
             }
         }
+
+        &[open]{
+            summary{
+                &::after{
+                    content: url("../../../../../assets/icons/chevron-up.svg");
+                    margin-top: 5px;
+                }
+                border-radius: 7px 7px 0 0;
+
+            }
+        }
+
+
+        &:not([open]){
+            summary{
+                &::after{
+                    content: url("../../../../../assets/icons/chevron-down.svg");
+                }
+
+                margin-top: 5px;
+            }
+        }
+
     }
 }
