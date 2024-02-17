@@ -14,10 +14,10 @@ export class ExperienceComponent {
   public arrayExperience = signal<IExperiences[]>([
     {
       summary: {
-        strong: 'Java Developer',
+        strong: 'Software Developer',
         p: "Angulo Sistemas | Marc 2022 - Present"
       },
-      text: '<p> Desde 2022, Atuo como Java Developer, Destacando me na area de back-end e front-end'
+      text: '<p> Desde 2022, Atuo como Software Developer, Destacando me na area de back-end utilizando tecnologias como Java, Junit e todo o Ecossistema Spring para construir Apis Robustas e com o maximo de segurança, Front-End Utilizo Tecnologias como JavaScript,TypeScript,Reactjs e Angular'
     }
   ])
 
